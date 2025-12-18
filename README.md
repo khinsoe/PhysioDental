@@ -1,2 +1,116 @@
-Master Physiology for Dental Surgery
-Structured learning based on Indu Khurana’s Textbook of Physiology.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhysioDental | Dental Physiology Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 font-sans text-slate-900">
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-700 underline decoration-indigo-500">PhysioDental</h1>
+            <div class="hidden md:flex space-x-6 font-medium">
+                <a href="#" class="hover:text-blue-600">Daily Lectures</a>
+                <a href="#" class="hover:text-blue-600">Textbook Library</a>
+                <a href="#" class="hover:text-blue-600">Q&A Forum</a>
+                <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Student Portal</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-gradient-to-r from-blue-800 to-indigo-900 text-white py-16 px-4">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Master Physiology for Dental Surgery</h2>
+            <p class="text-xl opacity-90 mb-8">Structured learning based on Indu Khurana’s Textbook of Physiology.</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <button class="bg-white text-blue-900 px-8 py-3 rounded-lg font-bold shadow-lg hover:bg-gray-100">Start Learning</button>
+                <button class="border-2 border-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-900 transition">Latest Lecture</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 lg:grid-cols-3 gap-8">
+        
+        <section class="lg:col-span-2 space-y-8">
+            <h3 class="text-2xl font-bold border-l-4 border-blue-600 pl-3">Daily Lecture Feed</h3>
+            
+            <article class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="bg-green-100 text-green-700 text-xs font-bold px-2 py-1 rounded">NEW LECTURE</span>
+                    <span class="text-slate-500 text-sm">Oct 24, 2023</span>
+                </div>
+                <h4 class="text-xl font-bold mb-2">Physiology of Salivary Secretion & Regulation</h4>
+                <p class="text-slate-600 mb-4">A deep dive into the composition of saliva, the role of acinar cells, and parasympathetic control mechanisms...</p>
+                <div class="flex space-x-4">
+                    <button class="text-blue-600 font-semibold text-sm hover:underline"><i class="fa-solid fa-file-pdf mr-1"></i> Download PDF</button>
+                    <button class="text-blue-600 font-semibold text-sm hover:underline"><i class="fa-solid fa-play mr-1"></i> Watch Video</button>
+                </div>
+            </article>
+
+            <article class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                <span class="text-slate-500 text-sm">Oct 22, 2023</span>
+                <h4 class="text-xl font-bold mb-2">The Trigeminal Nerve: Sensory & Motor Pathways</h4>
+                <p class="text-slate-600 mb-4">Understanding the "Dentist's Nerve" — functional anatomy and clinical significance of CN V.</p>
+                <button class="text-blue-600 font-semibold text-sm hover:underline">Read Lecture Notes →</button>
+            </article>
+        </section>
+
+        <aside class="space-y-8">
+            
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                <h3 class="font-bold text-lg mb-4"><i class="fa-solid fa-book-open text-blue-600 mr-2"></i>Textbook Modules</h3>
+                <ul class="space-y-3">
+                    <li class="flex justify-between items-center p-2 hover:bg-slate-50 rounded cursor-pointer">
+                        <span class="text-sm">1. General Physiology</span>
+                        <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">Completed</span>
+                    </li>
+                    <li class="flex justify-between items-center p-2 hover:bg-slate-50 rounded cursor-pointer">
+                        <span class="text-sm">2. Nerve-Muscle</span>
+                        <span class="text-xs bg-yellow-100 text-yellow-700 px-2 py-1 rounded">In Progress</span>
+                    </li>
+                    <li class="flex justify-between items-center p-2 hover:bg-slate-50 rounded cursor-pointer">
+                        <span class="text-sm">7. Gastrointestinal (Oral)</span>
+                        <span class="text-xs bg-slate-100 text-slate-500 px-2 py-1 rounded">Locked</span>
+                    </li>
+                </ul>
+                <button class="w-full mt-4 py-2 bg-slate-100 text-slate-700 text-sm rounded font-bold hover:bg-slate-200">View All Modules</button>
+            </div>
+
+            <div class="bg-indigo-50 p-6 rounded-xl border border-indigo-100">
+    <h3 class="font-bold text-lg mb-2 text-indigo-900"><i class="fa-solid fa-comments mr-2"></i>Ask a Professor</h3>
+    <p class="text-sm text-indigo-700 mb-4">Questions are sent directly to the Physiology Department.</p>
+    
+    <form name="student-questions" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="student-questions" />
+        
+        <div class="mb-3">
+            <label class="block text-xs font-bold text-indigo-900 uppercase">Topic</label>
+            <select name="topic" class="w-full p-2 text-sm rounded border border-indigo-200">
+                <option>Nerve-Muscle Physiology</option>
+                <option>Cardiovascular System</option>
+                <option>Gastrointestinal/Oral</option>
+            </select>
+        </div>
+
+        <textarea name="question" required class="w-full p-3 text-sm rounded-lg border border-indigo-200 mb-3 outline-none focus:ring-2 focus:ring-indigo-500" rows="3" placeholder="Explain the mechanism of action of the sodium-potassium pump..."></textarea>
+        
+        <button type="submit" class="w-full py-2 bg-indigo-600 text-white rounded font-bold hover:bg-indigo-700 shadow-sm transition">
+            Submit Question
+        </button>
+    </form>
+</div>
+
+        </aside>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-12 mt-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p>&copy; 2023 PhysioDental Hub. Based on DCI Syllabus for Dental Students.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
